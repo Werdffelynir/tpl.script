@@ -1,0 +1,12 @@
+
+var demo_users = [
+	{id: '1', name:'Simple User', email:'simple@user.com', passwd:'******'},
+	{id: '2', name:'Other man', email:'other@man.com', passwd:'******'}
+];
+var demo_articles = [
+	{id: '1', title: 'Iipsum dolor sit amet', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum necessitatibus praesentium, alias eligendi voluptatibus illo consequuntur fugit eius hic qui, quas non ipsum repudiandae libero accusamus esse nesciunt. Provident, incidunt.', date: '2016.02.12 10:00:00'},
+	{id: '2', title: 'Alias eligendi voluptatibus', description: 'Consequuntur autem asperiores, unde repudiandae accusantium labore eos tempore neque, tempora iusto exercitationem blanditiis. Vitae suscipit possimus delectus odit, obcaecati, rerum sunt dolorem numquam nesciunt eveniet ipsum autem nostrum quidem.', date: '2016.02.12 10:00:00'},
+	{id: '3', title: 'Labore eos tempore neque', description: 'Magni veritatis delectus incidunt quia tenetur architecto obcaecati laboriosam. Animi earum odio non quo nihil consequuntur cum architecto. Voluptatem itaque doloremque accusantium, nemo iste eos consequuntur tenetur ipsum officiis soluta!', date: '2016.02.12 10:00:00'},
+	{id: '4', title: 'Teritatis delectus incidunt quia', description: 'Aut minima molestiae, nisi odit quo officiis iure labore inventore quae maxime sequi tempore. Ducimus perspiciatis sit, impedit error sapiente amet obcaecati vitae eum, quis eos iste mollitia assumenda recusandae!', date: '2016.02.12 10:00:00'},
+	{id: '5', title: 'Modi adipisci facilis cupiditate', description: 'Ut nesciunt facilis, repellendus excepturi laborum quaerat ducimus earum iusto tempore. Unde sint ducimus, harum debitis consectetur asperiores ad magni eos modi adipisci facilis cupiditate, natus, maxime dolore. Eaque, vitae!', date: '2016.02.12 10:00:00'}
+];

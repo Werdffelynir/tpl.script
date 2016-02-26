@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 1</title>
+    <script type="text/javascript">//<![CDATA[
+
+    var Inc = {};
+
+        Inc.dirModules;
+        Inc.dirTemplates;
+        Inc.exports = {};
+
+        Inc.modules = [];
+        Inc.loadedModules = [];
+
+        Inc.loadModule = function(name, callback) {
+          if(Inc.modules.indexOf(name) === -1){
+            Inc.modules.push(name);
+
+            var scr = document.createElement("script");
+            scr.src = name;
+            scr.onload = function(){
+              Inc.loadedModules.push(name);
+              callback.call(Inc);
+            };
+
+            document.head.appendChild(scr);
+          }
+        };
+
+
+
+
+
+    //]]>
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Click Me" onclick="loadMod()" />
+
+    <h1></h1>
+    <p></p>
+
+    <script type="text/javascript">
+      function loadMod() {
+        Inc.loadModule('js/mod1.js', function(){ 
+          console.log('this', this);
+          console.log('Inc', Inc);
+          console.log('Inc.exports', Inc.exports);
+        });
+      }
+
+    </script>
+  </body>
+</html>
